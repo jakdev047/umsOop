@@ -1,0 +1,7 @@
+Person
+=============
+Person => id name blood contact
+    | --- UniPerson => Person, department, account 
+           | --- Student  => UniPerson, stuidentId, guardian, exams, fee
+           | --- Employee => UniPerson, employeeId, salary
+    | --- Guardian => Person, profession, income

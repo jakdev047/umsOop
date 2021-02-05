@@ -1,11 +1,11 @@
-const Person = require("./person");
+const UniPerson = require("./uniPerson");
 
 const _stuidentId = Symbol('stuidentId');
 const _guardian = Symbol('guardian');
 const _exams = Symbol('exams');
 const _fee = Symbol('fee');
 
-class Student extends Person {
+class Student extends UniPerson {
     constructor(id, name, stuidentId, guardian) {
         super(id, name);
         this[_stuidentId] = stuidentId;
