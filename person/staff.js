@@ -21,4 +21,4 @@ class Staff extends Employee {
     }
 }
 
-modules.export = Staff;
+module.exports = Staff;

@@ -21,4 +21,4 @@ class Teacher extends Employee {
     }
 }
 
-modules.export = Teacher;
+module.exports = Teacher;
