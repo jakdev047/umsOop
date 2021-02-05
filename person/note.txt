@@ -2,6 +2,8 @@ Person
 =============
 Person => id name blood contact
     | --- UniPerson => Person, department, account 
-           | --- Student  => UniPerson, stuidentId, guardian, exams, fee
-           | --- Employee => UniPerson, employeeId, salary
+        | --- Student  => UniPerson, stuidentId, guardian, exams, fee
+        | --- Employee => UniPerson, employeeId, salary
+            | --- Teacher => Employee, subject
+            | --- Staff => Employee, title
     | --- Guardian => Person, profession, income
